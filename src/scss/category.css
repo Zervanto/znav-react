@@ -1,0 +1,101 @@
+.wrap{
+    width:1000px;
+    margin: 0 auto;
+}
+.cate{
+    width: 210px;
+    height: 44px;
+    float: left;
+    background-color: #555;
+    overflow: visible;
+    z-index: 1;
+    position: relative;
+}
+.cate-item{
+    position:relative;
+    width: 210px;
+    height: 400px;
+    background-color: #555;
+    margin-top: 2px;
+}
+.all{
+    font:400 15px/44px "microsoft yahei";
+    color: #F5F5F5;
+    text-align: left;
+    padding-left: 10px;
+
+}
+.cate-item li a{
+    font:400 14px/31px "microsoft yahei";
+    color: #fff;
+    text-align: left;
+    padding-left: 10px;}
+.cate-item li span {
+    color: #fff;
+    margin-right: 10px;
+    float: right;
+    font-family: "simsun";
+}
+.cate-item li:hover{
+    background-color:#fff;
+}
+.cate-item li:hover a{
+    color: #555;
+}
+.cate-item li{
+    position: relative;
+}
+    /*submenu*/
+.cate-item li .sub_menu{
+    display:none;
+    width:790px;
+    position:absolute;
+    left:210px;
+    top:-20px;
+    background:#fff;
+    border:1px solid #fff;
+    border-radius:20px;
+    box-shadow:5px 5px 5px;    
+}
+
+ul li:hover .sub_menu{display:block;}
+.leftmenu{
+   width: 550px;
+   overflow:hidden;
+   float:left;
+}
+.leftmenu dl{
+    overflow:hidden;
+    display:block;
+    margin: 20px 0;
+
+    }
+.leftmenu dl dt{
+    float:left;
+    font-weight:bold;
+    color:#737373;
+    padding:0 8px;
+
+}
+
+.leftmenu dl  dd  a{
+     color: #737373;
+    float:left;
+    height:20px;
+    line-height:20px;
+    padding:0 10px;
+    border-left: 1px solid #e0e0e0;
+     font-size:12px;
+     margin-top:5px;
+}
+.rightmenu{
+    float:right;
+    }
+.rightmenu dl {
+    margin-top:20px;
+
+    }
+.rightmenu dl dd {
+    padding:0;
+    margin-bottom:2px;
+    }

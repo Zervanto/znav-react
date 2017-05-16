@@ -1,0 +1,191 @@
+$base-blue:#2585e6;
+
+%text-center {
+    text-align: center;
+}
+%text-left {
+    text-align: left;
+}
+%text-right{
+    text-align: right;
+}
+@mixin base-font($color:#000000){
+    font-size: 14px;
+    height: 2;
+    color: $color;
+}
+@mixin lage-font($color:#000000){
+    font-size: 16px;
+    height: 2;
+    color: $color;
+}
+@mixin befor-img($left:0,$top:0,$width:20px,$height:20px){
+    content: '';
+    float: left;
+    position: relative;
+    top: $top;
+    left: $left;
+    width: $width;
+    height: $height;
+    background-size: 100% 100%;
+}
+@mixin after-img($left:0,$top:0,$width:20px,$height:20px){
+    content: '';
+    float: right;
+    position: relative;
+    top: $top;
+    left: $left;
+    width: $width;
+    height: $height;
+    background-size: 100% 100%;
+}
+
+@mixin margin-around($left:0,$right:0,$top:0,$bottom:0){
+    margin-left: $left;
+    margin-right: $right;
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+@mixin padding-around($left:0,$right:0,$top:0,$bottom:0){
+    padding-left: $left;
+    padding-right: $right;
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+@mixin border-bottom($width:1px,$color:#F2F2F2,$type:solid){
+    border-bottom:$width $type $color ;
+}
+
+@mixin border-around($width:1px,$color:#F2F2F2,$type:solid){
+    border: $width $type $color;
+}
+@mixin back-line($color:#7cb6f0,$top:14px){
+    width: 100%;
+    height: 1px;
+    background: $color ;
+    margin-top: $top;
+    margin-bottom:$top ;
+    z-index: -1;
+}
+
+@mixin vertical-line($color:#7cb6f0,$left:14px,$height:10px,$top:2px){
+    width: 2px;
+    height: $height;
+    background: $color ;
+    margin-left: $left;
+    margin-right: $left ;
+    margin-top: $top;
+    margin-bottom:$top ;
+}
+
+@mixin linear-line($line:50px,$direction:vertical,$colors...){
+    
+    @if $direction == vertical{           
+        width: 1.5px;
+        background-image: -webkit-linear-gradient(to bottom, $colors);
+        background-image: linear-gradient(to bottom, $colors);
+        height: $line;
+        vertical-align: middle;
+    }
+    @else{
+        width: $line;
+        background-image: -webkit-linear-gradient(to right,$colors);
+        background-image: linear-gradient(to right, $colors);
+        background-image: -moz-linear-gradient(to right, $colors);
+        background-image: -o-linear-gradient(to right, $colors);
+        height: 2px;  
+        text-align: center;    
+    }
+
+    display: inline-block;
+}
+
+@mixin float-right($top:0px,$right:0px) {
+    float: right;
+    margin-top: $top;
+    margin-right: $right;
+}
+@mixin float-left($top:0px,$left:0px) {
+    float: left;
+    margin-top: $top;
+    margin-left: $left;
+}
+
+@mixin position-relative($top:0px,$left:0px){
+    position: relative;
+    top: $top;
+    left: $left;
+}
+@mixin hover-pointer{
+    :hover{
+        cursor: pointer;
+    }
+}
+@mixin hover-color($color:#f2f2f2){
+    :hover{
+        background-color: $color;
+    }
+}
+
+@mixin block-div($width){
+    display: inline-block;
+    width: $width;
+}
+
+@mixin input-style{
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+@mixin no-select{
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+/**
+ * /移动端屏幕自适应
+ * @param  {[type]} max-width:300px [description]
+ * @return {[type]}                 [description]
+ */
+@media screen and (max-width:300px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width:381px) and (max-width:400px) {
+    html {
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:401px) and (max-width:420px) {
+    html {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width:421px) {
+    html{
+        font-size: 17px;
+    }
+}
+@media screen and (min-width:422px) and (max-width:768px) {
+    html {
+        font-size: 18px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1024px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (min-width:1025px) {
+    html{
+        font-size: 22px;
+    }
+}

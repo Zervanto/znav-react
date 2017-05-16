@@ -1,0 +1,34 @@
+.zheader{
+    width: 100%;
+    height: 50px;
+    background-color: #555;
+}
+.zheader .wrap .logo{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+}
+.zheader .wrap .nav{
+    float: right;
+    height: 50px;
+}
+.nav ul li {
+    float: left;
+    margin: 0 10px ;
+}
+.nav ul li:hover {
+    background-color:#FFF;
+    color:#555;
+    /*border:1px solid #555;*/
+}
+.nav ul li a{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
+.nav ul li a:hover{
+    color:#555;
+}

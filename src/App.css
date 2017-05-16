@@ -1,0 +1,19 @@
+html,body,div,ul,li,img,a,span,input{
+    margin: 0;
+    padding:0;
+    border: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: #f5f5f5;
+    width: 100%;
+}
+.wrap{
+    width:1000px;
+    margin: 0 auto;
+}
