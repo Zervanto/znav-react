@@ -2,20 +2,18 @@ import React,{Component} from 'react'
 import PropTypes from 'prop-types'
 import '../scss/category.css'
 class CateContent extends Component{
-    // constructor(){
+    // constructor(props){
     //     super(props)
     // }
     static propTypes={
         name:PropTypes.string,
-        title1:PropTypes.string,
-        title2:PropTypes.string,
+        title:PropTypes.array,
         item1:PropTypes.array,
         item2:PropTypes.array,
     }
     static defaultProps = {
-        name:'还没给我起名字呢',
-        title1:'网站类型1',
-        title2:'网站类型2',
+        name:'name',
+        title:['网站类型1', '网站类型2'], 
         item1:['站点','站点','站点','站点','站点','站点','站点','站点'],               
         item2:['站点','站点','站点','站点','站点','站点','站点','站点','站点','站点','站点','站点','站点']               
     }
@@ -26,7 +24,7 @@ class CateContent extends Component{
         <div className="sub_menu">
             <div className="leftmenu">
             <dl>
-                <dt><a href="#">{this.props.title1}</a></dt>
+                <dt><a href="#">{this.props.title[0]}</a></dt>
                <dd>
                 <a href="#" >{this.props.item1[0]}</a>
                 <a href="#" >{this.props.item1[1]}</a>
@@ -39,7 +37,7 @@ class CateContent extends Component{
                 </dd>
             </dl> 
                   <dl>
-                <dt><a href="#">{this.props.title2}</a></dt>
+                <dt><a href="#">{this.props.title[1]}</a></dt>
                <dd>
                 <a href="#" >{this.props.item2[0]}</a>
                 <a href="#" >{this.props.item2[1]}</a>

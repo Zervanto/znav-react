@@ -1,16 +1,16 @@
-.zheader{
+/*.zheader{
     width: 100%;
     height: 50px;
     background-color: #555;
 }
-.zheader .wrap .logo{
+.zheader .logo{
     float: left;
     height: 50px;
     line-height: 50px;
     color: #fff;
     text-align: center;
 }
-.zheader .wrap .nav{
+.zheader .nav{
     float: right;
     height: 50px;
 }
@@ -21,11 +21,43 @@
 .nav ul li:hover {
     background-color:#FFF;
     color:#555;
-    /*border:1px solid #555;*/
 }
 .nav ul li a{
     height: 50px;
     line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
+.nav ul li a:hover{
+    color:#555;
+}*/
+  .zheader{
+    width: 100%;
+    height: 0.5rem;
+    background-color: #555;
+}
+.zheader .logo{
+    float: left;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    color: #fff;
+    text-align: center;
+}
+.zheader .nav{
+    float: right;
+    height: 0.5rem;
+}
+.nav ul li {
+    float: left;
+    margin: 0 0.1rem ;
+}
+.nav ul li:hover {
+    background-color:#FFF;
+    color:#555;
+}
+.nav ul li a{
+    height: 0.5rem;
+    line-height: 0.5rem;
     text-align: center;
     color: #fff;
 }

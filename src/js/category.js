@@ -1,16 +1,39 @@
 import React,{Component} from 'react'
+import $ from 'jquery'
 import '../scss/category.css'
 import CateContent from './cateContent.js'
 class Category extends Component{
+    constructor(props){
+        super(props)
+        this.state = {
+            siteData:{}
+        }
+    }
+    componentWillMount(){
+        // fetch('http://localhost:3000/getjson/getsitedata')
+        //     .then(response=>response.json())
+        //     .then(data=>{
+        //         console.log(data)
+        //         this.setState({siteData:data})
+        //         console.log(this.state.siteData)  
+        //     })
+        //     .catch(e=>console.log("error",e))
+        $.get('http://localhost:3000/getjson/getsitedata',data=>{
+                console.log(data)
+                this.setState({siteData:data})
+                console.log(this.state.siteData)  
+        });    
+    }
     render(){
-        const siteData = ['w3c','nodejs','react','vue','angular','jquery','bootstrap','mdn'];
+        // const siteData = ['w3c','nodejs','react','vue','angular','jquery','bootstrap','mdn'];
+        console.log(this.state.siteData)  
         return <div>
         <div className='wrap'>
             <div className='cate'>
                 <div className='all' href='#'>我的酷站</div>
                 <div className='cate-item fl'>
                 <ul>
-                    <CateContent name='前端，还有诗和远方' item1={siteData} title1='学习网站' title2='技术官网'/>                   
+                    <CateContent name={this.state.siteData.name} item1={this.state.siteData.item1} title={this.state.siteData.title}/>                   
                     <CateContent/>                   
                     <CateContent/>                   
                     <CateContent/>                   

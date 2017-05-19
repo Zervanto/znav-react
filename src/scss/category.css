@@ -1,7 +1,4 @@
-.wrap{
-    width:1000px;
-    margin: 0 auto;
-}
+/*
 .cate{
     width: 210px;
     height: 44px;
@@ -45,7 +42,7 @@
 .cate-item li{
     position: relative;
 }
-    /*submenu*/
+  
 .cate-item li .sub_menu{
     display:none;
     width:790px;
@@ -98,4 +95,102 @@ ul li:hover .sub_menu{display:block;}
 .rightmenu dl dd {
     padding:0;
     margin-bottom:2px;
+    }
+*/
+.cate{
+    width: 2.1rem;
+    height: 0.44rem;
+    float: left;
+    background-color: #555;
+    overflow: visible;
+    z-index: 1;
+    position: relative;
+}
+.cate-item{
+    position:relative;
+    width: 2.1rem;
+    height: 4rem;
+    background-color: #555;
+    margin-top: 0.02rem;
+}
+.all{
+    font:400 0.15rem/0.44rem "microsoft yahei";
+    color: #F5F5F5;
+    text-align: left;
+    padding-left: 0.1rem;
+
+}
+.cate-item li a{
+    font:400 0.14rem/0.31rem "microsoft yahei";
+    color: #fff;
+    text-align: left;
+    padding-left: 0.1rem;}
+.cate-item li span {
+    color: #fff;
+    margin-right: 0.1rem;
+    float: right;
+    font-family: "simsun";
+}
+.cate-item li:hover{
+    background-color:#fff;
+}
+.cate-item li:hover a{
+    color: #555;
+}
+.cate-item li{
+    position: relative;
+}
+    /*submenu*/
+.cate-item li .sub_menu{
+    display:none;
+    width:7.9rem;
+    position:absolute;
+    left:2.1rem;
+    top:-0.2rem;
+    background:#fff;
+    border:1px solid #fff;
+    border-radius:20px;
+    box-shadow:0.05rem 0.05rem 0.05rem;    
+}
+
+ul li:hover .sub_menu{display:block;}
+.leftmenu{
+   width: 5.5rem;
+   overflow:hidden;
+   float:left;
+}
+.leftmenu dl{
+    overflow:hidden;
+    display:block;
+    margin: 0.2rem 0;
+
+    }
+.leftmenu dl dt{
+    float:left;
+    font-weight:bold;
+    color:#737373;
+    padding:0 0.08rem;
+
+}
+
+.leftmenu dl  dd  a{
+     color: #737373;
+    float:left;
+    height:0.2rem;
+    line-height:0.2rem;
+    padding:0 0.1rem;
+    border-left: 1px solid #e0e0e0;
+     font-size:0.12rem;
+     margin-top:0.05rem;
+}
+.rightmenu{
+    float:right;
+    }
+.rightmenu dl {
+    margin-top:0.2rem;
+
+    }
+.rightmenu dl dd {
+    padding:0;
+    margin-bottom:0.02rem;
     }

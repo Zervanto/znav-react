@@ -1,11 +1,11 @@
-#baidu{
+/*#baidu{
     margin:10px auto;
 }
 #baidu form .center{
     text-align: center;
 }
 #baidu form div input:nth-child(2){
-    width:500px;
+    width:50%;
     height:34px;
     text-indent: 1em;
     border:1px solid #555;
@@ -14,14 +14,41 @@
     outline:none;
 }
 #baidu form div input:nth-child(3){
-    width: 100px;
+    width: 20%;
     height: 36px;
     color: #fff;
     font-size: 15px;
     letter-spacing: 1px;
-    /* background: #3385ff;*/
     background: #555;
-    /*border-bottom: 1px solid #2d78f4;*/
+    border: 1px solid #555;
+    outline: medium;
+    -webkit-appearance: none;
+    -webkit-border-radius: 10px;
+} */
+#baidu{
+    margin:0.1rem auto;
+}
+#baidu form .center{
+    text-align: center;
+}
+#baidu form div input:nth-child(2){
+    width:50%;
+    height:0.34rem;
+    text-indent: 1em;
+    border:1px solid #555;
+    border-radius:0.01rem;
+    -webkit-border-radius: 10px;
+    outline:none;
+}
+#baidu form div input:nth-child(3){
+    width: 20%;
+    height: 0.35rem;
+    vertical-align: bottom;
+    color: #fff;
+    font-size: 0.15rem;
+    letter-spacing: 0.01rem;
+    margin-left: 0.1rem;
+    background: #555;
     border: 1px solid #555;
     outline: medium;
     -webkit-appearance: none;

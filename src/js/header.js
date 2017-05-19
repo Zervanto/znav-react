@@ -4,8 +4,7 @@ import '../scss/header.css'
 class Header extends Component{
     render (){
         return <div>
-            <div className='zheader'>
-                <div className="wrap">
+            <div className="zheader">
                     <div className="logo">Znav</div>
                     <div className="nav">
                         <ul>
@@ -17,7 +16,6 @@ class Header extends Component{
                     </div>
                 </div>
             </div>
-        </div>
     }
 }
 export default Header
